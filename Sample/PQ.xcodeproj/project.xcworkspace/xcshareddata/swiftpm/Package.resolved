@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "pqmagic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/neHCuoHEpa/PQMagic.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d80cccd8fa1fe4083e96ddbea1553328f8dc92c6"
+      }
+    }
+  ],
+  "version" : 2
+}

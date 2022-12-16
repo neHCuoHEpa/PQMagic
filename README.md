@@ -34,5 +34,9 @@ let magic = PQMagic()
 magic.invoke(initial: initial: "PQQ", target: "QQPQPPPP")
 ```
 
+## Sample
+Open Sample/PQ.xcodeproj and run.
+Enter you desire values and let SDK do the magic. 
+
 ## Test Framework
 Used XCTest framework
