@@ -10,7 +10,7 @@ import PQMagic
 
 struct ContentView: View {
     
-    //private let magic = PQMagic()
+    private let magic = PQMagic()
     
     // MARK: Combine
     @State var input: String = ""
@@ -51,7 +51,16 @@ struct ContentView: View {
     
     // MARK: actions
     func invokeMagic() {
-        // magic.invoke
+        if self.input.isEmpty,
+           self.output.isEmpty {
+            return
+        }
+        if magic.invoke(initial: self.input, target: self.output) {
+            self.result = .good
+        }
+        else {
+            self.result = .bad
+        }
     }
 }
 

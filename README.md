@@ -8,7 +8,7 @@ PQMagic is a SDK to check input string value is magically transform to output va
 The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the swift compiler.
 
 dependencies: [
-    .package(url: "https://github.com/neHCuoHEpa/PQMagic.git", .branch("main"))
+    .package(url: "https://github.com/neHCuoHEpa/PQMagic.git", .upToNextMajor(from: "1.0"))
 ]
 
 ## Manual
