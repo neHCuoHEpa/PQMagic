@@ -3,7 +3,11 @@ import Foundation
 
 public class PQMagic {
     
-    public static func invoke(initial: String, target: String) -> Bool {
+    init() {
+        
+    }
+    
+    public func invoke(initial: String, target: String) -> Bool {
         let regex = #"[PQ]+"#
         
         if initial.range(of: regex, options: .regularExpression) == nil { return false }
@@ -16,7 +20,7 @@ public class PQMagic {
         return p(i: initial, t: target) || q(i: initial, t: target)
     }
     
-    private static func p(i: String, t: String) -> Bool {
+    private func p(i: String, t: String) -> Bool {
         let n = i.appending("P")
         
         if n.count == t.count {
@@ -26,7 +30,7 @@ public class PQMagic {
         return p(i: n, t: t) || q(i: n, t: t)
     }
     
-    private static func q(i: String, t: String) -> Bool {
+    private func q(i: String, t: String) -> Bool {
         let n = String(i.reversed()).appending("Q")
         
         if n.count == t.count {
